@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changing BG</title>
+</head>
+<style type="text/css">
+	#body{
+		background-color: white;
+	}
+	.centerdiv{
+		top: 50%;
+		left: 50%;
+		margin-top: auto;
+		margin-left: auto;
+		display: block;
+		border: thick solid black;
+		position: absolute;
+		margin-top: -208.5px; 
+        margin-left: -375px;
+	}
+	button{
+		width: 120px;
+		height: 40px;
+	}
+	
+</style>
+<body id="body">
+	<div class="centerdiv">
+		<h1>JAVASCRIPT CODE TO CHANGE BACKGROUND COLORS.</h1>
+	</div>
+
+<button onclick="changeRed()" style="background-color: red" id="red">Red</button>
+<button onclick="changeBlue()" style="background-color: blue" id="#blue">Blue</button>
+<button onclick="changeGreen()" style="background-color: green" id="#green">Green</button>
+<button onclick="changeViolet()" style="background-color: violet" id="#violet">Violet</button>
+<button onclick="changePurple()" style="background-color: purple" id="#purple">Purple</button>
+<button onclick="changeBack()">Change Back</button>
+
+</body>
+<script type="text/javascript">
+	function changeRed(){
+		document.getElementById('body').style.backgroundColor='red';
+	}
+	function changeBlue(){
+		document.getElementById('body').style.backgroundColor='Blue';
+	}
+	function changeGreen(){
+		document.getElementById('body').style.backgroundColor='Green';
+	}
+	function changeViolet(){
+		document.getElementById('body').style.backgroundColor='Violet';
+	}
+	function changePurple(){
+		document.getElementById('body').style.backgroundColor='Purple';
+	}
+	function changeBack(){
+		document.getElementById('body').style.backgroundColor='white';
+	}
+	
+</script>
+</html>
